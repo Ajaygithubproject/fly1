@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fly Maverick</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+  <div class="logo">✈️ Fly <span>Maverick</span></div>
+
+  <ul class="nav-links" id="navLinks">
+    <div class="close-btn" onclick="closeMenu()">
+      <i class="fas fa-times"></i>
+    </div>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Australia</a></li>
+    <li><a href="#">New Zealand</a></li>
+    <li><a href="#">Canada</a></li>
+    <li><a href="#">Europe</a></li>
+    <li><a href="#">Japan</a></li>
+    <li><a href="#">UK</a></li>
+  </ul>
+
+  <div class="contact-icons">
+    <i class="fas fa-phone"></i>
+    <i class="fas fa-envelope"></i>
+  </div>
+
+  <div class="menu-btn" onclick="openMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero" id="hero">
+
+  <div class="hero-content">
+    <h1>TRAVELLER<br>FOR LIFE.</h1>
+    <p>Live your best moments</p>
+
+    <div class="search-bar">
+      <div class="search-box"><i class="fas fa-map"></i> Where are you going?</div>
+      <div class="search-box"><i class="fas fa-location-dot"></i> Location</div>
+      <div class="search-box"><i class="fas fa-list"></i> Tour type</div>
+      <button class="search-btn">Search</button>
+    </div>
+  </div>
+
+</section>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919626877940" 
+   class="whatsapp-float" 
+   target="_blank">
+   <i class="fab fa-whatsapp"></i>
+</a>
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-toggle" onclick="toggleChat()">
+  <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Chat Bot">
+</div>
+
+
+<!-- CHATBOX -->
+<div class="chatbot-box" id="chatbox">
+  <div class="chat-header">
+    Fly Maverick Assistant ✈️
+    <span onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot-msg">Hi 👋 Welcome to Fly Maverick! How can I help you?</div>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  
+</div>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<!-- ================= FLYING AIRPLANE ================= -->
+<section class="subscribe-section">
+
+  <div class="subscribe-wrapper">
+
+    <!-- LEFT CONTENT -->
+    <div class="subscribe-left">
+      <div class="icon-box">
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-regular fa-bell bell"></i>
+      </div>
+
+      <div class="text">
+        <h2>Get Updates & More</h2>
+        <p>Thoughtful thoughts to your inbox</p>
+      </div>
+    </div>
+
+    <!-- RIGHT INPUT -->
+    <div class="subscribe-right">
+      <input type="email" placeholder="Your Email">
+      <button>SUBSCRIBE</button>
+    </div>
+
+  </div>
+
+</section>
+<!-- ================= FLYING AIRPLANE ================= -->
+
+<div class="flight-wrapper">
+  <div class="flight-message">
+    Your Journey Starts With Fly Maverick!
+  </div>
+
+  <img src="assets/pexels-raf-jabri-29128-113585-removebg-preview.png" class="flight-plane" alt="Flight">
+</div>
+
+<!---
+<section class="features">
+
+  <div class="feature-box">
+    <div class="icon-circle">
+      <i class="fas fa-shield-alt"></i>
+    </div>
+    <h3>Professional & Transparent</h3>
+    <p>Clear pricing with no hidden costs</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon-circle">
+      <i class="fas fa-clock"></i>
+    </div>
+    <h3>Timely Support</h3>
+    <p>Regular updates throughout the process</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon-circle">
+      <i class="fas fa-file-alt"></i>
+    </div>
+    <h3>Expert Documentation</h3>0
+    <p>Comprehensive document assistance</p>
+  </div>
+
+</section>-->
+
+
+<!-- ================= LUXURY ABOUT SECTION ================= -->
+
+<section class="about-luxury">
+  <div class="about-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-text">
+      <h2>About Fly Maverick</h2>
+      <div class="gold-line"></div>
+
+      <p>
+        Fly Maverick is a professional international travel and visa consultancy.
+        We provide expert visa assistance for Australia, Canada, Europe, Japan,
+        UK and more.
+      </p>
+
+      <p>
+        Our mission is to make your international journey simple, transparent,
+        and successful with complete documentation support.
+      </p>
+
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> info@flymaverick.com</p>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="about-image">
+      <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Travel">
+    </div>
+
+  </div>
+</section>
+<!-- ================= COUNTRIES WE SERVE ================= -->
+
+<section class="countries">
+  <div class="countries-header">
+    <h2>Countries We Serve</h2>
+    <p>Expert visit visa assistance for multiple destinations</p>
+  </div>
+
+  <div class="countries-container">
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/au.png" alt="Australia">
+      <h3>Australia</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/nz.png" alt="New Zealand">
+      <h3>New Zealand</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/ca.png" alt="Canada">
+      <h3>Canada</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/pl.png" alt="Poland">
+      <h3>Europe (Poland)</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/kr.png" alt="South Korea">
+      <h3>South Korea</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/jp.png" alt="Japan">
+      <h3>Japan</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/vn.png" alt="Vietnam">
+      <h3>Vietnam</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/ru.png" alt="Russia">
+      <h3>Russia</h3>
+    </div>
+
+    <div class="country-card">
+      <img src="https://flagcdn.com/w320/gb.png" alt="United Kingdom">
+      <h3>United Kingdom</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="blog-section">
+
+  <div class="blog-header">
+    <h2>Travel Guides by Country</h2>
+    <p>Latest visa tips & international travel updates</p>
+  </div>
+
+  <div class="blog-container">
+
+    <!-- AUSTRALIA -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/id/1011/600/400">
+      <div class="blog-content">
+        <span class="blog-tag">Australia</span>
+        <h3>Australia Tourist Visa Guide</h3>
+        <p>Step-by-step guide for Australia visitor visa.</p>
+        <a href="#" class="blog-btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- CANADA -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/id/1015/600/400">
+      <div class="blog-content">
+        <span class="blog-tag">Canada</span>
+        <h3>Canada Visitor Visa Checklist</h3>
+        <p>Documents required for Canada tourist visa.</p>
+        <a href="#" class="blog-btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- UK -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/id/1025/600/400">
+      <div class="blog-content">
+        <span class="blog-tag">United Kingdom</span>
+        <h3>UK Tourist Visa Process</h3>
+        <p>Everything you need to visit the UK easily.</p>
+        <a href="#" class="blog-btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- EUROPE -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/id/1036/600/400">
+      <div class="blog-content">
+        <span class="blog-tag">Europe</span>
+        <h3>Schengen Visa Guide</h3>
+        <p>Travel across Europe with one visa.</p>
+        <a href="#" class="blog-btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- JAPAN -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/id/1043/600/400">
+      <div class="blog-content">
+        <span class="blog-tag">Japan</span>
+        <h3>Japan Tourist Visa Guide</h3>
+        <p>Visit Japan with complete documentation tips.</p>
+        <a href="#" class="blog-btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- KOREA -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/id/1050/600/400">
+      <div class="blog-content">
+        <span class="blog-tag">South Korea</span>
+        <h3>Korea Travel Visa Guide</h3>
+        <p>Explore Korea with easy visa steps.</p>
+        <a href="#" class="blog-btn">Read More</a>
+      </div>
+    </div>
+<!-- USA -->
+<div class="blog-card">
+  <img src="https://picsum.photos/id/1067/600/400">
+  <div class="blog-content">
+    <span class="blog-tag">USA</span>
+    <h3>USA Tourist Visa Guide</h3>
+    <p>Complete guide for applying USA B1/B2 visitor visa.</p>
+    <a href="#" class="blog-btn">Read More</a>
+  </div>
+</div>
+<!-- SINGAPORE -->
+<div class="blog-card">
+  <img src="https://picsum.photos/id/1076/600/400">
+  <div class="blog-content">
+    <span class="blog-tag">Singapore</span>
+    <h3>Singapore Tourist Visa Process</h3>
+    <p>Easy visa guide for short-term Singapore travel.</p>
+    <a href="#" class="blog-btn">Read More</a>
+  </div>
+</div>
+
+  </div>
+
+</section>
+<!-- ================= SERVICES SECTION ================= -->
+
+<section class="services">
+  
+  <div class="services-header">
+    <h2>Our Services Include</h2>
+    <p>Professional visa guidance and complete assistance</p>
+  </div>
+
+  <!-- Top Travel Image -->
+  
+
+  <div class="services-container">
+
+    <div class="service-card">
+      <i class="fas fa-user-check"></i>
+      <h3>Eligibility Assessment</h3>
+      <p>We evaluate your profile to determine visa eligibility.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-file-signature"></i>
+      <h3>Document Verification</h3>
+      <p>Complete checklist and thorough document review.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-laptop"></i>
+      <h3>Application Assistance</h3>
+      <p>Expert guidance through online application process.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-calendar-check"></i>
+      <h3>Submission Guidance</h3>
+      <p>Appointment scheduling and submission support.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-sync-alt"></i>
+      <h3>Follow-up Support</h3>
+      <p>Regular updates until visa decision.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-lock"></i>
+      <h3>Client Confidentiality</h3>
+      <p>Your information is secure and private.</p>
+    </div>
+
+  </div>
+
+  <!-- Note -->
+  <div class="services-note">
+    <p>
+      <strong>Note:</strong> We assist with the process but final visa approval depends solely on the respective embassy or immigration authority.
+    </p>
+  </div>
+
+</section>
+<!-- ================= WHY CHOOSE US ================= -->
+
+<!-- ================= WHY CHOOSE MAVERICK ================= -->
+
+<section class="why-modern">
+  <div class="why-modern-overlay"></div>
+
+  <div class="why-modern-container">
+
+    <!-- LEFT TEXT -->
+    <div class="why-left">
+      <h2>Why Choose <span>Fly Maverick?</span></h2>
+      <p>
+        We provide professional visa consultancy services with complete
+        transparency and end-to-end guidance for your international journey.
+      </p>
+    </div>
+
+    <!-- RIGHT FEATURES -->
+    <div class="why-right">
+
+      <div class="why-box">
+        <i class="fas fa-shield-alt"></i>
+        <h4>Professional & Transparent</h4>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-receipt"></i>
+        <h4>Clear Fee Structure</h4>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-folder-open"></i>
+        <h4>Experienced Documentation</h4>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-clock"></i>
+        <h4>Timely Updates</h4>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-lock"></i>
+        <h4>Client Confidentiality</h4>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-route"></i>
+        <h4>End-to-End Guidance</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= OUR PROCESS - MODERN ================= -->
+
+<section class="process-modern">
+  <div class="process-header">
+    <h2>Our Process</h2>
+    <p>Simple, step-by-step visa assistance</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="circle">1</div>
+      <h4>Free Initial Consultation</h4>
+      <p>We discuss your travel plans and assess eligibility.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="circle">2</div>
+      <h4>Document Checklist Shared</h4>
+      <p>Receive a comprehensive list of required documents.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="circle">3</div>
+      <h4>Document Verification</h4>
+      <p>We review and verify all your documents thoroughly.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="circle">4</div>
+      <h4>Application Submission</h4>
+      <p>Your application is prepared and submitted correctly.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="circle">5</div>
+      <h4>Embassy Appointment</h4>
+      <p>Guidance for scheduling and attending appointments.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="circle">6</div>
+      <h4>Status Updates</h4>
+      <p>Regular updates until final visa decision.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="testimonial-section">
+
+  <div class="testimonial-header">
+    <h2>What Our Clients Say</h2>
+    <p>Trusted by travelers worldwide ✈️</p>
+  </div>
+
+  <div class="testimonial-container">
+
+    <!-- REVIEW 1 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        Fly Maverick made my Australia visa process smooth and stress-free.
+        Highly professional service!
+      </p>
+      <div class="testimonial-user">
+        <img src="https://i.pravatar.cc/100?img=1">
+        <div>
+          <h4>Arun Kumar</h4>
+          <span>Australia Visa</span>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW 2 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        Excellent documentation support. Got my Canada visa approved easily.
+      </p>
+      <div class="testimonial-user">
+        <img src="https://i.pravatar.cc/100?img=5">
+        <div>
+          <h4>Priya Sharma</h4>
+          <span>Canada Visa</span>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW 3 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        Honest consultancy with clear pricing. Best travel service in Tamil Nadu!
+      </p>
+      <div class="testimonial-user">
+        <img src="https://i.pravatar.cc/100?img=12">
+        <div>
+          <h4>Rahul Das</h4>
+          <span>UK Visa</span>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+<div class="testimonial-card">
+  <p class="testimonial-text">
+    Very smooth Australia visa process. Clear guidance and fast updates.
+    Highly recommend Fly Maverick!
+  </p>
+  <div class="testimonial-user">
+    <img src="https://i.pravatar.cc/100?img=21">
+    <div>
+      <h4>Karthik S</h4>
+      <span>Australia Visa</span>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-card">
+  <p class="testimonial-text">
+    Got my Canada visitor visa approved without any tension.
+    Their documentation support is excellent.
+  </p>
+  <div class="testimonial-user">
+    <img src="https://i.pravatar.cc/100?img=32">
+    <div>
+      <h4>Divya Nair</h4>
+      <span>Canada Visa</span>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-card">
+  <p class="testimonial-text">
+    Honest consultancy with transparent pricing.
+    UK visa approved on first attempt!
+  </p>
+  <div class="testimonial-user">
+    <img src="https://i.pravatar.cc/100?img=18">
+    <div>
+      <h4>Mohammed Irfan</h4>
+      <span>UK Visa</span>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-card">
+  <p class="testimonial-text">
+    Quick Singapore visa processing. Very friendly staff and
+    excellent follow-up support.
+  </p>
+  <div class="testimonial-user">
+    <img src="https://i.pravatar.cc/100?img=45">
+    <div>
+      <h4>Meena R</h4>
+      <span>Singapore Travel</span>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-card">
+  <p class="testimonial-text">
+    Japan visa process was very easy with Fly Maverick.
+    They handled everything professionally.
+  </p>
+  <div class="testimonial-user">
+    <img src="https://i.pravatar.cc/100?img=56">
+    <div>
+      <h4>Arvind Kumar</h4>
+      <span>Japan Visa</span>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-card">
+  <p class="testimonial-text">
+    Best consultancy in Tamil Nadu for travel visas.
+    Got my Korea visa approved quickly!
+  </p>
+  <div class="testimonial-user">
+    <img src="https://i.pravatar.cc/100?img=60">
+    <div>
+      <h4>Sneha P</h4>
+      <span>South Korea Visa</span>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+
+<section class="faq-section">
+  <div class="faq-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="faq-image">
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="FAQ Travel">
+    </div>
+
+    <!-- RIGHT FAQ CONTENT -->
+    <div class="faq-content">
+      <h2>Frequently Asked Questions</h2>
+      <p class="faq-subtitle">Get answers to common questions</p>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you guarantee visa approval?</button>
+        <div class="faq-answer">
+          <p>No consultancy can guarantee visa approval. Final decision depends solely on the embassy or immigration authority.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Are fees refundable if visa is rejected?</button>
+        <div class="faq-answer">
+          <p>Service fees are generally non-refundable as they cover documentation and processing support.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you provide job visas?</button>
+        <div class="faq-answer">
+          <p>We assist with visit and documentation services. Job visas depend on employer sponsorship and country rules.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How long does the process take?</button>
+        <div class="faq-answer">
+          <p>Processing time varies depending on the country and visa type. We provide estimated timelines during consultation.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= IMPORTANT DISCLAIMER ================= -->
+
+<section class="disclaimer-section">
+  <div class="disclaimer-container">
+
+    <div class="disclaimer-header">
+      <i class="fas fa-exclamation-triangle"></i>
+      <h2>Important Disclaimer</h2>
+    </div>
+
+    <ul class="disclaimer-list">
+      <li>Visa approval is subject to embassy rules and immigration policies.</li>
+      <li>Processing time may vary based on embassy workload and applicant profile.</li>
+      <li>Documentation charges are strictly non-refundable.</li>
+      <li>Fly Maverick does not guarantee visa approval.</li>
+    </ul>
+
+  </div>
+</section>
+<!-- ================= GET IN TOUCH ================= -->
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- LEFT CONTACT INFO -->
+    <div class="contact-info">
+
+      <h2>Get In Touch</h2>
+      <p>We’re here to assist you with your visa and travel queries.</p>
+
+     <div class="contact-box">
+  <i class="fas fa-phone-alt"></i>
+  <div>
+    <h4>Phone</h4>
+    <p>
+      <a href="tel:+919626877940" class="phone-link">
+        +91 9626877940
+      </a>
+    </p>
+  </div>
+</div>
+
+
+      <div class="contact-box">
+  <i class="fas fa-envelope"></i>
+  <div>
+    <h4>Email</h4>
+    <p>
+      <a href="mailto:flyymaverick@gmail.com" class="email-link">
+        flyymaverick@gmail.com
+      </a>
+    </p>
+  </div>
+</div>
+
+
+      <div class="contact-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Location</h4>
+          <p>Chennai, Tamil Nadu</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT CONTACT FORM -->
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+  <div class="quote-content">
+    <h2>"Your Journey Begins With The Right Guidance."</h2>
+    <p>Fly Maverick – Making Global Dreams Possible.</p>
+  </div>
+</section>
+<!-- ================= MOTIVATION QUOTE ================= -->
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- COMPANY INFO -->
+    <div class="footer-box">
+      <h3>Fly Maverick</h3>
+      <p>Your trusted partner for international travel.</p>
+
+      <div class="social-icons">
+  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+  <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+</div>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Fees</a></li>
+      </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+      <h4>Services</h4>
+      <ul>
+        <li>Visit Visa Assistance</li>
+        <li>Documentation Support</li>
+        <li>Application Guidance</li>
+      </ul>
+    </div>
+
+    <!-- COUNTRIES -->
+    <div class="footer-box">
+      <h4>Countries</h4>
+      <p>Australia • Canada</p>
+      <p>New Zealand • UK</p>
+      <p>Europe • Asia</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="footer-bottom">
+    © 2024 Fly Maverick. All rights reserved. <br>
+    <span>Your Journey Starts With Us.</span>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const navLinks = document.getElementById("navLinks");
+
+  function openMenu(){
+    navLinks.classList.add("show");
+  }
+
+  function closeMenu(){
+    navLinks.classList.remove("show");
+  }
+</script>
+</body>
+</html>
